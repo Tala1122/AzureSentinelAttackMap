@@ -50,20 +50,20 @@ FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, latitud
 | where sourcehost_CF != ""
 ```
 You should then see results, you can then click the Visualization dropdown menu and set up the following Map settings:
-#### Layout Settings
-- **Location info using** > Latitude/Longitude
-- **Latitude** > latitude_CF
-- **Longitude** > longitude_CF
-- **Size by** > event_count
-#### Color Settings
-- **Coloring Type:** Heatmap 
-- **Color by** > event_count
-- **Aggregation for color** > Sum of values
-- **Color palette** > Green to Red
-#### Metric Settings
-- **Metric Label** > label_CF
-- **Metric Value** > event_count
-- Select **Apply** button and **Save and Close**
-- Save as "Failed RDP World Map" in the same region and under the resource group (honeypotlab)
+Layout Settings
+- Location info using > Latitude/Longitude
+- Latitude > latitude_CF
+- Longitude > longitude_CF
+- Size by > event_count
+Color Settings
+- Coloring Type: Heatmap 
+- Color by > event_count
+- Aggregation for color > Sum of values
+- Color palette > Green to Red
+Metric Settings
+- Metric Label > label_CF
+- Metric Value > event_count
 
+Save as "Failed RDP World Map" in the same region and under the resource group: honeypotlab.
 
+![map](https://github.com/Tala1122/AzureSentinelAttackMap/blob/main/img2.png)
